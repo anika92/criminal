@@ -63,5 +63,22 @@ class RegPolice extends DB
 
         }
     }
+    public function profilestore(){
+        $query="INSERT INTO `criminaldb`.`police_info` (`name`, `email`, `password`, `police_code`, `nid`) VALUES ('".$this->fullName."', '".$this->email."', '".$this->password."', '".$this->police_code."', '".$this->n_id."')";
+        $result=mysqli_query($this->conn,$query);
+        if($result){
+            Message::message("<div class=\"alert alert-success\">
+  <strong>Success!</strong> Sucessfully Registered, you can log in now.
+</div>");
+            Utility::redirect('../../index.php');
+
+        } else {
+            Message::message("<div class=\"alert alert-danger\">
+  <strong>Error!</strong> Data has not been stored successfully.
+    </div>");
+            Utility::redirect('../../index.php');
+
+        }
+    }
 
 }
