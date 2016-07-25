@@ -12,7 +12,7 @@ body {
     display: block;
     width: 100%;
     text-align: center;
-    background-image: url(Resources/images/header.jpg);
+    background-image: url(../images/header.jpg);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;

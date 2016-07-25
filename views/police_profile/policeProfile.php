@@ -10,8 +10,8 @@
 
 
 <!-- Start Formoid form-->
-<link rel="stylesheet" href="formoid_files/formoid1/formoid-solid-blue.css" type="text/css" />
-<script type="text/javascript" src="formoid_files/formoid1/jquery.min.js"></script>
+<link rel="stylesheet" href="../../Resources/formoid_files/formoid1/formoid-solid-blue.css" type="text/css" />
+<script type="text/javascript" src="../../Resources/formoid_files/formoid1/jquery.min.js"></script>
 <form class="formoid-solid-blue" style="background-color:#FFFFFF;font-size:14px;font-family:'Roboto',Arial,Helvetica,sans-serif;color:#34495E;max-width:480px;min-width:150px" method="post"><div class="title"><h2>My form</h2></div>
 	<div class="element-select"><label class="title">
 
@@ -41,7 +41,7 @@
 	<div class="element-radio"><label class="title">Gender</label>		<div class="column column1"><label><input type="radio" name="radio" value="Male" /><span>Male</span></label><label><input type="radio" name="radio" value="Female" /><span>Female</span></label></div><span class="clearfix"></span>
 </div>
 	<div class="element-phone"><label class="title"></label><div class="item-cont"><input class="large" type="tel" pattern="[+]?[\.\s\-\(\)\*\#0-9]{3,}" maxlength="24" name="phone" placeholder="Phone" value=""/><span class="icon-place"></span></div></div>
-<div class="submit"><input type="submit" value="Submit"/></div></form><p class="frmd"><a href="http://formoid.com/v29.php">bootstrap forms</a> Formoid.com 2.9</p><script type="text/javascript" src="formoid_files/formoid1/formoid-solid-blue.js"></script>
+<div class="submit"><input type="submit" value="Submit"/></div></form><p class="frmd"><a href="http://formoid.com/v29.php">bootstrap forms</a> Formoid.com 2.9</p><script type="text/javascript" src="../../Resources/formoid_files/formoid1/formoid-solid-blue.js"></script>
 <!-- Stop Formoid form-->
 
 

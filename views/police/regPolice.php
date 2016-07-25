@@ -10,8 +10,8 @@
 
 
 <!-- Start Formoid form-->
-<link rel="stylesheet" href="formoid_files/formoid1/formoid-solid-green.css" type="text/css" />
-<script type="text/javascript" src="formoid_files/formoid1/jquery.min.js"></script>
+<link rel="stylesheet" href="../../Resources/formoid_files/formoid1/formoid-solid-green.css" type="text/css" />
+<script type="text/javascript" src="../../Resources/formoid_files/formoid1/jquery.min.js"></script>
 <form class="formoid-solid-green" style="background-color:#FFFFFF;font-size:14px;font-family:'Roboto',Arial,Helvetica,sans-serif;color:#34495E;max-width:480px;min-width:150px" method="post" action="store.php"><div class="title"><h2>Police Registration</h2></div>
 
     <div class="element-input">
@@ -57,7 +57,7 @@
         <input type="submit" value="Submit"/>
     </div></form><p class="frmd">
     <a href="http://formoid.com/v29.php">bootstrap forms</a> Formoid.com 2.9</p>
-<script type="text/javascript" src="formoid_files/formoid1/formoid-solid-green.js"></script>
+<script type="text/javascript" src="../../Resources/formoid_files/formoid1/formoid-solid-green.js"></script>
 <!-- Stop Formoid form-->
 
 
