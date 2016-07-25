@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/Resources/bootstrap" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Resources/css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Resources/fonts" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Resources/js" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/one-page-wonder.css" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/views/formoid_files" charset="UTF-8" />
+  </component>
+</project>
