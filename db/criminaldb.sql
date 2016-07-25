@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 25, 2016 at 10:19 AM
+-- Generation Time: Jul 25, 2016 at 01:10 PM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -85,12 +85,29 @@ CREATE TABLE IF NOT EXISTS `missingtable` (
   `description` varchar(255) NOT NULL,
   `age` int(11) NOT NULL,
   `height` varchar(20) NOT NULL,
+  `gender` varchar(20) NOT NULL,
   `image` varchar(255) NOT NULL,
   `address` varchar(255) NOT NULL,
+  `date` date NOT NULL,
   `status` varchar(255) NOT NULL,
   `added_by` varchar(255) NOT NULL,
   `updated_by` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `missingtable`
+--
+
+INSERT INTO `missingtable` (`missing_id`, `missing_name`, `description`, `age`, `height`, `gender`, `image`, `address`, `date`, `status`, `added_by`, `updated_by`) VALUES
+(3, 'Rony', 'Sera', 25, '5', 'Male', 'terms.png', 'hathazari', '2016-07-05', 'Still Missing', '', ''),
+(4, 'Abul', 'Sera', 25, '5', 'Male', 'terms.png', 'hathazari', '2016-07-05', 'Still Missing', '', ''),
+(5, 'Abul', 'Sera', 25, '5', 'Male', 'terms.png', 'hathazari', '2016-07-05', 'Still Missing', '', ''),
+(6, 'Abul', 'Sera', 25, '5', 'Male', '1469444431terms.png', 'hathazari', '2016-07-05', 'Still Missing', '', ''),
+(7, 'Abul', 'Sera', 25, '5', 'Male', '1469444527terms.png', 'hathazari', '2016-07-05', 'Still Missing', '', ''),
+(8, 'Abul', 'Sera', 25, '5', 'Male', '1469444582terms.png', 'hathazari', '2016-07-05', 'Still Missing', '', ''),
+(9, 'Abul', 'Sera', 25, '5', 'Male', '1469444663terms.png', 'hathazari', '2016-07-05', 'Still Missing', '', ''),
+(10, 'Abul', 'Sera', 25, '5', 'Male', '1469444716terms.png', 'hathazari', '2016-07-05', 'Still Missing', '', ''),
+(11, 'Abul', 'Sera', 25, '5', 'Male', '1469444780terms.png', 'hathazari', '2016-07-05', 'Still Missing', '', '');
 
 -- --------------------------------------------------------
 
@@ -244,7 +261,7 @@ MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT;
 -- AUTO_INCREMENT for table `missingtable`
 --
 ALTER TABLE `missingtable`
-MODIFY `missing_id` int(11) NOT NULL AUTO_INCREMENT;
+MODIFY `missing_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `police_info`
 --
