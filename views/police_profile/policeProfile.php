@@ -13,13 +13,17 @@
 <link rel="stylesheet" href="formoid_files/formoid1/formoid-solid-blue.css" type="text/css" />
 <script type="text/javascript" src="formoid_files/formoid1/jquery.min.js"></script>
 <form class="formoid-solid-blue" style="background-color:#FFFFFF;font-size:14px;font-family:'Roboto',Arial,Helvetica,sans-serif;color:#34495E;max-width:480px;min-width:150px" method="post"><div class="title"><h2>My form</h2></div>
-	<div class="element-select"><label class="title"></label><div class="item-cont"><div class="large"><span><select name="select" >
+	<div class="element-select"><label class="title">
+
+		</label><div class="item-cont"><div class="large"><span><select name="select" >
 
 		<option value="OC">OC</option>
 		<option value="SI">SI</option>
 		<option value="ASP">ASP</option>
 		<option value="SP">SP</option></select><i></i><span class="icon-place"></span></span></div></div></div>
-	<div class="element-select"><label class="title"></label><div class="item-cont"><div class="large"><span><select name="select1" >
+	<div class="element-select"><label class="title"></label><div class="item-cont">
+			<div class="large"><span>
+					<select name="select1" >
 
 		<option value="Kotowali">Kotowali</option>
 		<option value="Pachlaish">Pachlaish</option>

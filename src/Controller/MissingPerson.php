@@ -3,24 +3,19 @@ namespace App\Controller;
 use App\Message\Message;
 use App\Utility\Utility;
 use App\Model\Database as DB;
-class MissinPerson extends DB
+class MissingPerson extends DB
 {
     public $id = "";
     public $name = "";
 
     public $description = "";
     public $age = "";
+    public $height="";
     public $gender = "";
     public $image = "";
-    public $street = "";
-    public $city = "";
-    public $state = "";
-    public $postalCode = "";
-
-    public $country = "";
+    public $address = "";
     public $date = "";
     public $status = "";
-
     public $addedBy = "";
     public $updatedBy = "";
     public function __construct()
@@ -42,27 +37,17 @@ class MissinPerson extends DB
         if(array_key_exists('age',$data)){
             $this->age=$data['age'];
         }
+        if(array_key_exists('height',$data)){
+            $this->height=$data['height'];
+        }
         if(array_key_exists('gender',$data)){
             $this->gender=$data['gender'];
         }
         if(array_key_exists('image',$data)){
             $this->image=$data['image'];
         }
-        if(array_key_exists('address[addr1]',$data)){
-            $this->street=$data['address[addr1]'];
-        }
-        if(array_key_exists('address[city]',$data)){
-            $this->city=$data['address[city]'];
-        }
-
-        if(array_key_exists('address[state]',$data)){
-            $this->state=$data['address[state]'];
-        }
-        if(array_key_exists('address[zip]',$data)){
-            $this->postalCode=$data['address[zip]'];
-        }
-        if(array_key_exists('address[country]',$data)){
-            $this->country=$data['address[country]'];
+        if(array_key_exists('address',$data)){
+            $this->address=$data['address'];
         }
 
         if(array_key_exists('date',$data)){
@@ -85,7 +70,9 @@ class MissinPerson extends DB
     }
 
     public function store(){
-        $query="INSERT INTO `criminaldb`.`missingtable` ( `missing_name`, `Description`, `age`, `gender`, `image`, `address`, `status`, `added_by`, `updated_by`) VALUES ( '{$this->name}', '{$this->description}', '{$this->age}', '{$this->gender}', '{$this->image}', '{$this->street}', 'aa', 'aa', 'aa');";
+        $query="INSERT INTO `criminaldb`.`missingtable` ( `missing_name`, `description`, `age`,`height` ,`gender`, `image`, `address`,`date`, `status`) VALUES ( '{$this->name}', '{$this->description}', '{$this->age}', '{$this->height}','{$this->gender}', '{$this->image}','{$this->address}','{$this->date}', '{$this->status}');";
+//        echo $query;
+//        die();
         $result=mysqli_query($this->conn,$query);
         if($result){
             Message::message("<div class=\"alert alert-success\">
