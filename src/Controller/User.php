@@ -3,14 +3,14 @@ namespace App\Controller;
 use App\Message\Message;
 use App\Utility\Utility;
 use App\Model\Database as DB;
-class RegPolice extends DB
+class User extends DB
 {
     public $id = "";
     public $fullName = "";
     public $email = "";
     public $password = "";
     public $n_id="";
-    public $police_code="";
+
 
 
 
@@ -29,15 +29,12 @@ class RegPolice extends DB
         if(array_key_exists('email',$data)){
             $this->email=$data['email'];
         }
-        if(array_key_exists('password',$data)){
-            $this->password=md5($data['password']);
-        }
 
-        if(array_key_exists('police_code',$data)){
-            $this->police_code=$data['police_code'];
-        }
         if(array_key_exists('nid',$data)){
             $this->n_id=$data['nid'];
+        }
+        if(array_key_exists('password',$data)){
+            $this->password=md5($data['password']);
         }
 
 
@@ -47,7 +44,7 @@ class RegPolice extends DB
     }
 
     public function store(){
-        $query="INSERT INTO `criminaldb`.`police_info` (`name`, `email`, `password`, `police_code`, `nid`) VALUES ('".$this->fullName."', '".$this->email."', '".$this->password."', '".$this->police_code."', '".$this->n_id."')";
+        $query="INSERT INTO `criminaldb`.`user_info` (`name`, `email`, `nid`, `password`) VALUES ('".$this->fullName."', '".$this->email."', '".$this->n_id."', '".$this->password."')";
         $result=mysqli_query($this->conn,$query);
         if($result){
             Message::message("<div class=\"alert alert-success\">

@@ -43,7 +43,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Register As <span class="caret"></span></a>
                     <ul class="dropdown-menu">
                         <li><a href="views/police/regPolice.php">Police</a></li>
-                        <li><a href="#">Public</a></li>
+                        <li><a href="views/user/regUser.php">Public</a></li>
 
                     </ul>
                 </li>
