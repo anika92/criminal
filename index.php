@@ -78,41 +78,62 @@
 
 
 
-    <!-- First Featurette -->
+            <!-- First Featurette -->
 
-        <img class="featurette-image img-circle img-responsive pull-right" src="Resources/images/content.jpg">
-        <h2 class="featurette-heading">This First Heading
-            <span class="text-muted">Will Catch Your Eye</span>
-        </h2>
-        <p class="lead">Welcome To Criminal Database Management System. It is designed to Make people aware from crime. Here People can make online complaints to the Police Station. In order to do so first they have to register themselves on the system.
-            User can also see the list of Most Wanted Criminals in various area through this web application. Here you can also see the detail of Miising person so you can contact to the person if you find such persons.</p>
+            <img class="featurette-image img-circle img-responsive pull-right" src="Resources/images/content.jpg">
+            <h2 class="featurette-heading">This First Heading
+                <span class="text-muted">Will Catch Your Eye</span>
+            </h2>
+            <p class="lead">Welcome To Criminal Database Management System. It is designed to Make people aware from crime. Here People can make online complaints to the Police Station. In order to do so first they have to register themselves on the system.
+                User can also see the list of Most Wanted Criminals in various area through this web application. Here you can also see the detail of Miising person so you can contact to the person if you find such persons.</p>
         </div>
         <div class="col-md-4">
 
-            <h2>Member</h2>
+            <h2>Member Login</h2>
 
-            <form action="login.php" method="post">
-                <label><span class="style1">Username</span></label>
-                <input type="text" value="" name="username" size="10" class="input_field" title="username" /><br>
-                <label><span class="style1">Password</span></label>
-                <input type="password" value="" name="password" class="input_field" title="password" /><br>
-                <label><span class="style1">Select User</span></label>
+            <form action="login.php" class="" method="post">
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="mail" name="email" class="form-control" id="email" placeholder="Enter Email Address">
+                </div>
 
-                <label>
-                    <select name="cmbUser" id="cmbUser">
-                        <option>User</option>
-                        <option>Police</option>
-                        <option>Admin</option>
+                <div class="form-group">
+                    <label for="pwd">Password:</label>
+                    <input type="password" class="form-control" id="pwd">
+                </div>
+                <div class="form-group">
+                    <label>Select User</label>
+                    <select name="thana" class="form-control" id="city">
+                        <option>Select User</option>
+                        <option value="User">User</option>
+                        <option value="Police">Police</option>
+                        <option value="Admin">Admin</option>
                     </select>
-                </label><br>
-                <input type="submit" name="login" value="Login" alt="login" id="submit_btn" title="Login" />
 
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+
+                <!-- <label><span class="style1">Username</span></label>
+                 <input type="text" value="" name="username" size="10" class="input_field" title="username" /><br>
+                 <label><span class="style1">Password</span></label>
+                 <input type="password" value="" name="password" class="input_field" title="password" /><br>
+                 <label><span class="style1">Select User</span></label>
+
+                 <label>
+                     <select name="cmbUser" id="cmbUser">
+                         <option>User</option>
+                         <option>Police</option>
+                         <option>Admin</option>
+                     </select>
+                 </label><br>
+                 <input type="submit" name="login" value="Login" alt="login" id="submit_btn" title="Login" />
+ -->
             </form>
             <div class="cleaner"></div>
 
         </div>
 
-       </div>
+    </div>
 
     <hr class="featurette-divider">
 

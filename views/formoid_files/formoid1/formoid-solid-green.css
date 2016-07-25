@@ -16,6 +16,7 @@ html{
 }
 .formoid-solid-green .error-field input,
 .formoid-solid-green .error-field input[type=text],
+.formoid-solid-green .error-field input[type=file],
 .formoid-solid-green .error-field input[type=password],
 .formoid-solid-green .error-field input[type=email],
 .formoid-solid-green .error-field input[type=url],
@@ -55,7 +56,7 @@ html{
   line-height: 20px;
 }
 .formoid-solid-green .column{
-  float:left; 
+  float:left;
 }
 /* width = parseInt(100/columns.length)*/
 .formoid-solid-green .column1{ width:100%;}
@@ -118,22 +119,22 @@ html{
 .blurBg-true{
   background-attachment: fixed;
   background-image:
-    -webkit-linear-gradient(5deg, rgba(255, 255, 255, 0.35) -10%, rgba(255, 255, 255, 0) 20%), /* linear bottom */
-    -webkit-radial-gradient(40% 60%, ellipse farthest-side, rgba(255, 255, 255, 0.45) -10%, rgba(255, 255, 255, 0) 100%),/* center white */
-    -webkit-radial-gradient(50% -10%, circle farthest-side, rgba(255, 255, 255, 0.35) -10%, rgba(255, 255, 255, 0) 30%),/* top center white */
-    -webkit-radial-gradient(100% 0%, ellipse farthest-side, rgba(255, 255, 255, 0.35) -10%, rgba(255, 255, 255, 0) 20%),/* top right white */
-    -webkit-radial-gradient(0% 0%, ellipse farthest-side, rgba(255, 255, 255, 0.35) -10%, rgba(255, 255, 255, 0) 10%),/* top left white */
-    -webkit-radial-gradient(90% 60%, ellipse farthest-side, rgba(0, 0, 0, 0.35) -10%, rgba(0, 0, 0, 0) 100%),/* center right black */
-    -webkit-radial-gradient(20% 10%, circle farthest-side, rgba(0, 0, 0, 0.25) -10%, rgba(0, 0, 0, 0) 20%);
-  
+          -webkit-linear-gradient(5deg, rgba(255, 255, 255, 0.35) -10%, rgba(255, 255, 255, 0) 20%), /* linear bottom */
+          -webkit-radial-gradient(40% 60%, ellipse farthest-side, rgba(255, 255, 255, 0.45) -10%, rgba(255, 255, 255, 0) 100%),/* center white */
+          -webkit-radial-gradient(50% -10%, circle farthest-side, rgba(255, 255, 255, 0.35) -10%, rgba(255, 255, 255, 0) 30%),/* top center white */
+          -webkit-radial-gradient(100% 0%, ellipse farthest-side, rgba(255, 255, 255, 0.35) -10%, rgba(255, 255, 255, 0) 20%),/* top right white */
+          -webkit-radial-gradient(0% 0%, ellipse farthest-side, rgba(255, 255, 255, 0.35) -10%, rgba(255, 255, 255, 0) 10%),/* top left white */
+          -webkit-radial-gradient(90% 60%, ellipse farthest-side, rgba(0, 0, 0, 0.35) -10%, rgba(0, 0, 0, 0) 100%),/* center right black */
+          -webkit-radial-gradient(20% 10%, circle farthest-side, rgba(0, 0, 0, 0.25) -10%, rgba(0, 0, 0, 0) 20%);
+
   background-image:
-    linear-gradient(85deg, rgba(255, 255, 255, 0.35) -10%, rgba(255, 255, 255, 0) 20%), /* linear bottom */
-    radial-gradient(40% 60%,ellipse farthest-side, rgba(255, 255, 255, 0.45) -10%, rgba(255, 255, 255, 0) 100%),/* center white */
-    radial-gradient(50% -10%,circle farthest-side, rgba(255, 255, 255, 0.35) -10%, rgba(255, 255, 255, 0) 30%),/* top center white */
-    radial-gradient(100% 0%,ellipse farthest-side, rgba(255, 255, 255, 0.35) -10%, rgba(255, 255, 255, 0) 20%),/* top right white */
-    radial-gradient(0% 0%,ellipse farthest-side, rgba(255, 255, 255, 0.35) -10%, rgba(255, 255, 255, 0) 10%),/* top left white */
-    radial-gradient(90% 60%,ellipse farthest-side, rgba(0, 0, 0, 0.35) -10%, rgba(0, 0, 0, 0) 100%),/* center right black */
-    radial-gradient(20% 10%,circle farthest-side, rgba(0, 0, 0, 0.25) -10%, rgba(0, 0, 0, 0) 20%);/* top left black */
+          linear-gradient(85deg, rgba(255, 255, 255, 0.35) -10%, rgba(255, 255, 255, 0) 20%), /* linear bottom */
+          radial-gradient(40% 60%,ellipse farthest-side, rgba(255, 255, 255, 0.45) -10%, rgba(255, 255, 255, 0) 100%),/* center white */
+          radial-gradient(50% -10%,circle farthest-side, rgba(255, 255, 255, 0.35) -10%, rgba(255, 255, 255, 0) 30%),/* top center white */
+          radial-gradient(100% 0%,ellipse farthest-side, rgba(255, 255, 255, 0.35) -10%, rgba(255, 255, 255, 0) 20%),/* top right white */
+          radial-gradient(0% 0%,ellipse farthest-side, rgba(255, 255, 255, 0.35) -10%, rgba(255, 255, 255, 0) 10%),/* top left white */
+          radial-gradient(90% 60%,ellipse farthest-side, rgba(0, 0, 0, 0.35) -10%, rgba(0, 0, 0, 0) 100%),/* center right black */
+          radial-gradient(20% 10%,circle farthest-side, rgba(0, 0, 0, 0.25) -10%, rgba(0, 0, 0, 0) 20%);/* top left black */
   /*
     radial-gradient(40% 60%,ellipse farthest-side, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0) 50%),
     radial-gradient(50% -10%,circle closest-corner, rgba(255, 255, 255, 0.3) 20%, rgba(255, 255, 255, 0) 50%),
@@ -173,9 +174,9 @@ Solid style
   font-family: 'icons';
   src: url('icons.eot');
   src: url('icons.eot#iefix') format('embedded-opentype'),
-       url('icons.woff') format('woff'),
-       url('icons.ttf') format('truetype'),
-       url('icons.svg#icons') format('svg');
+  url('icons.woff') format('woff'),
+  url('icons.ttf') format('truetype'),
+  url('icons.svg#icons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -233,7 +234,7 @@ Solid style
 /* Global Declaration */
 
 /*
-CORE FUNCTIONALITY 
+CORE FUNCTIONALITY
 
 Not advised to edit stuff below this line
 -----------------------------------------------------
@@ -497,6 +498,7 @@ Not advised to edit stuff below this line
 
 
 .formoid-solid-green input[type=text],
+.formoid-solid-green input[type=file],
 .formoid-solid-green input[type=password],
 .formoid-solid-green input[type=email],
 .formoid-solid-green input[type=url],
@@ -514,7 +516,7 @@ Not advised to edit stuff below this line
   border-radius:3px;
 
   padding: 10px 10px 9px 2.3em;
-  
+
   outline:none;
   -o-box-sizing: border-box;
   box-sizing: border-box;
@@ -522,7 +524,7 @@ Not advised to edit stuff below this line
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: normal;
-  
+
   font-size: 1em;
 }
 .formoid-solid-green .element-address input[type=text],
@@ -685,8 +687,8 @@ Not advised to edit stuff below this line
 }
 
 /* type number */
-.formoid-solid-green input[type=number]::-webkit-inner-spin-button, 
-.formoid-solid-green input[type=number]::-webkit-outer-spin-button{ 
+.formoid-solid-green input[type=number]::-webkit-inner-spin-button,
+.formoid-solid-green input[type=number]::-webkit-outer-spin-button{
   -webkit-appearance: none;
 }
 
@@ -987,7 +989,7 @@ Not advised to edit stuff below this line
   border: 2px solid #1abc9c;
 }
 .datepicker:before {
-	border-bottom: 7px solid #1abc9c;
+  border-bottom: 7px solid #1abc9c;
 }
 .datepicker td.active,
 .datepicker td.active:hover,
@@ -1254,8 +1256,8 @@ bootstrap
   -webkit-transition: 0.25s;
   transition: 0.25s;
   -webkit-backface-visibility: hidden;
-  width: 0; 
-  height: 0; 
+  width: 0;
+  height: 0;
   border-left: 8px solid transparent;
   border-right: 8px solid transparent;
   z-index: 10;
