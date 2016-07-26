@@ -21,7 +21,9 @@
 		<option value="Kotowali">Kotowali</option>
 		<option value="Pachlaish">Pachlaish</option>
 		<option value="Double Muring">Double Muring</option>
-		<option value="Hathazari">Hathazari</option></select><i></i><span class="icon-place"></span></span></div></div></div>
+		<option value="Hathazari">Hathazari</option></select><i></i>
+					<span class="icon-place"></span></span></div></div>
+	</div>
 	<div class="element-select"><label class="title"></label><div class="item-cont">
 			<div class="large"><span>
 					<select name="city" >
@@ -44,7 +46,7 @@
 	</div>
 	<div class="element-number"><label class="title"></label>
 		<div class="item-cont">
-			<input class="large" type="number" min="0" max="100" name="postal" placeholder="Postal Code" value=""/>
+			<input class="large" type="number" name="postal" placeholder="Postal Code" value=""/>
 			<span class="icon-place"></span>
 		</div>
 	</div>

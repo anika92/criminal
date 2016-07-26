@@ -3,9 +3,9 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 26, 2016 at 03:06 PM
--- Server version: 10.1.13-MariaDB
--- PHP Version: 5.5.35
+-- Generation Time: Jul 26, 2016 at 06:29 PM
+-- Server version: 10.1.8-MariaDB
+-- PHP Version: 5.6.14
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -179,7 +179,6 @@ CREATE TABLE `police_profile` (
   `city` varchar(20) NOT NULL,
   `address` varchar(20) NOT NULL,
   `postal` int(20) NOT NULL,
-  `state` varchar(20) NOT NULL,
   `gender` varchar(20) NOT NULL,
   `phone` int(255) NOT NULL,
   `image` varchar(255) NOT NULL
@@ -199,6 +198,13 @@ CREATE TABLE `user_info` (
   `password` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `user_info`
+--
+
+INSERT INTO `user_info` (`user_id`, `name`, `email`, `nid`, `password`) VALUES
+(1, 'rony', 'a@gsf.com', 34324234, 'f29deaae8f77d04e811cea289e60fedd');
+
 -- --------------------------------------------------------
 
 --
@@ -211,11 +217,17 @@ CREATE TABLE `user_profile` (
   `city` varchar(20) NOT NULL,
   `thana` varchar(20) NOT NULL,
   `postal` int(20) NOT NULL,
-  `state` varchar(20) NOT NULL,
   `gender` varchar(20) NOT NULL,
   `phone` int(20) NOT NULL,
   `image` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `user_profile`
+--
+
+INSERT INTO `user_profile` (`user_id`, `address`, `city`, `thana`, `postal`, `gender`, `phone`, `image`) VALUES
+(1, 'sdfsdfdsf', 'Dhaka', 'Double Muring', 99, 'Female', 2147483647, 'ttt.jpg');
 
 --
 -- Indexes for dumped tables
@@ -318,12 +330,12 @@ ALTER TABLE `police_profile`
 -- AUTO_INCREMENT for table `user_info`
 --
 ALTER TABLE `user_info`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `user_profile`
 --
 ALTER TABLE `user_profile`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- Constraints for dumped tables
 --
