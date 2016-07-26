@@ -4,9 +4,13 @@ use App\Controller\CriminalType;
 include_once ('../../vendor/autoload.php');
 $_crimetype=new CrimeType();
 $allCrimeType=$_crimetype->index();
-
+//\App\Utility\Utility::d($allCrimeType);
 $_criminaltype=new CriminalType();
 $allCriminalType=$_criminaltype->index();
+//\App\Utility\Utility::d($allCriminalType);
+
+
+
 ?>
 
 
@@ -27,35 +31,34 @@ $allCriminalType=$_criminaltype->index();
 
 
 
-	<form class="formoid-solid-blue" style="background-color:#FFFFFF;font-size:14px;font-family:'Roboto',Arial,Helvetica,sans-serif;color:#34495E;max-width:480px;min-width:150px" method="post" action="store.php"><div class="title"><h2>Criminal Information</h2></div>
-	<div class="element-input"><label class="title"></label><div class="item-cont"><input class="large" type="text" name="input" placeholder="Name"/><span class="icon-place"></span></div></div>
+	<form class="formoid-solid-blue" style="background-color:#FFFFFF;font-size:14px;font-family:'Roboto',Arial,Helvetica,sans-serif;color:#34495E;max-width:480px;min-width:150px" method="post" action="store.php">
+		<div class="title"><h2>Criminal Information</h2></div>
+	<div class="element-input"><label class="title"></label><div class="item-cont"><input class="large" type="text" name="name" placeholder="Name"/><span class="icon-place"></span></div></div>
 
 	<div class="element-multiple"><label class="title"></label><div class="item-cont"><div class="large"><select data-no-selected="Nothing selected" name="multiple[]" multiple="multiple" >
 					<?php
 					foreach($allCrimeType as $crime_type){
 
 					?>
-					<option value="<?php $crime_type ?>"><?php echo $crime_type ?></option>
+					<option value="<?php echo $crime_type->crime_type ?>"><?php echo $crime_type->crime_type ?></option>
 				 <?php } ?> </select><span class="icon-place"></span></div></div></div>
 	<div class="element-select"><label class="title"></label><div class="item-cont"><div class="large"><span><select name="select" >
 						<?php
 						foreach($allCriminalType as $criminal_type){
 
 						?>
-						<option value="<?php $criminal_type ?>"><?php echo $criminal_type ?></option>
+						<option value="<?php echo $criminal_type->c_t_type ?>"><?php echo $criminal_type->c_t_type ?></option>
 
 						 <?php }?></select><i></i><span class="icon-place"></span></span></div></div></div>
-	<div class="element-input">
-		<label class="title"></label>
-		<div class="item-cont">
-			<input class="large" type="text" name="age" placeholder="Age"/>
-			<span class="icon-place"></span>
+		<div class="element-number"><label class="title">
+			</label><div class="item-cont">
+				<input class="large" type="text"  name="age" placeholder="age" />
+				<span class="icon-place"></span>
+			</div>
 		</div>
-	</div>
 	<div class="element-number"><label class="title">
-
 		</label><div class="item-cont">
-			<input class="large" type="text" min="0" max="100" name="number" placeholder="Height" value=""/>
+			<input class="large" type="text"  name="height" placeholder="Height" />
 			<span class="icon-place"></span>
 		</div>
 	</div>

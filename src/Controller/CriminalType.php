@@ -51,10 +51,10 @@ class CriminalType extends DB
     public function index()
     {
         $_allCrime = array();
-        $query = "SELECT c_t_type FROM `criminaltable`";
+        $query = "SELECT * FROM `criminaltable`";
         $result = mysqli_query($this->conn, $query);
-        while ($row = mysqli_fetch_assoc($result)) {
-            $_allCrime[] = $row['c_t_type'];
+        while ($row = mysqli_fetch_object($result)) {
+            $_allCrime[] = $row;
         }
         return $_allCrime;
     }

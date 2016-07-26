@@ -1,3 +1,9 @@
+<?php
+session_start();
+include_once('vendor/autoload.php');
+use App\Message\Message;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -90,20 +96,25 @@
         <div class="col-md-4">
 
             <h2>Member Login</h2>
-
-            <form action="login.php" class="" method="post">
+            <div class="message">
+                <?php if((array_key_exists('message',$_SESSION)&& (!empty($_SESSION['message'])))) {
+                    echo Message::message();
+                }
+                ?>
+            </div>
+            <form action="views/authentication/login.php" class="" method="post">
                 <div class="form-group">
                     <label>Email:</label>
-                    <input type="mail" name="email" class="form-control" id="email" placeholder="Enter Email Address">
+                    <input type="email" name="email" class="form-control" id="email" placeholder="Enter Email Address">
                 </div>
 
                 <div class="form-group">
                     <label for="pwd">Password:</label>
-                    <input type="password" class="form-control" id="pwd">
+                    <input type="password" name="password" class="form-control" id="pwd" placeholder="Enter Password">
                 </div>
                 <div class="form-group">
                     <label>Select User</label>
-                    <select name="thana" class="form-control" id="city">
+                    <select name="userType" class="form-control" id="userType">
                         <option>Select User</option>
                         <option value="User">User</option>
                         <option value="Police">Police</option>

@@ -30,15 +30,17 @@ class CriminalInfo extends DB
         if (array_key_exists('name', $data)) {
             $this->name = $data['name'];
         }
-        if (array_key_exists('multiple[]', $data)) {
-            $this->crimeType = $data['multiple[]'];
+        if (array_key_exists('multiple', $data)) {
+            $this->crimeType = $data['multiple'];
         }
         if (array_key_exists('select', $data)) {
             $this->criminalType = $data['select'];
         }
         if (array_key_exists('age', $data)) {
             $this->age = $data['age'];
+
         }
+
         if (array_key_exists('height', $data)) {
             $this->height = $data['height'];
         }
@@ -49,7 +51,7 @@ class CriminalInfo extends DB
             $this->gender = $data['gender'];
         }
         if (array_key_exists('address', $data)) {
-            $this->age = $data['address'];
+            $this->address = $data['address'];
         }
         if (array_key_exists('image', $data)) {
             $this->image = $data['image'];
@@ -62,9 +64,11 @@ class CriminalInfo extends DB
 
     public function store()
     {
-        $query = "INSERT INTO `criminaldb`.`criminal_info` ( `name`, `crime_id`, `c_t_id`, `age`, `height`, `description`, `gender`, `address`, `image`) VALUES ( '{$this->name}', 'NULL', 'NULL', '{$this->age}', '{$this->height}', '{$this->description}', '{$this->gender}', '{$this->address}', '{$this->image}');');";
-        echo $query;
-
+        $query="INSERT INTO `criminal_info` ( `name`, `crime_type`, `c_t_type`, `age`, `height`, `description`, `gender`, `address`, `image`) VALUES ( '".$this->name."', '".$this->crimeType."', '".$this->criminalType."', '".$this->age."', '".$this->height."', '".$this->description."', '".$this->gender."', '".$this->address."', '".$this->image."');";
+//        $query="INSERT INTO `criminal_info` (`name`, `crime_type`, `c_t_type`, `age`, `height`, `description`, `gender`, `address`, `image`) VALUES ('".$this->name."', '".$this->crimeType."', '".$this->criminalType."', '".$this->age."', '".$this->height."', '".$this->description."', '".$this->gender."', '".$this->address."', '".$this->image."');";
+//        $query = "INSERT INTO `criminaldb`.`criminal_info` ( `name`, `crime_type`, `criminal_type`, `age`, `height`, `description`, `gender`, `address`, `image`) VALUES ( '{$this->name}', '{$this->crimeType}', '{$this->criminalType}', '{$this->age}', '{$this->height}', '{$this->description}', '{$this->gender}', '{$this->address}', '{$this->image}');');";
+//        echo $query;
+//        die();
         $result = mysqli_query($this->conn, $query);
 
         if ($result) {
