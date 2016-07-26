@@ -47,5 +47,14 @@ class CrimeType extends DB
 
         }
     }
+    public function index(){
+        $_allCrime= array();
+        $query="SELECT crime_type FROM `crimetable`";
+        $result= mysqli_query($this->conn,$query);
+        while($row=mysqli_fetch_assoc($result)){
+            $_allCrime[]=$row['crime_type'];
+        }
+        return $_allCrime;
+    }
 
 }
