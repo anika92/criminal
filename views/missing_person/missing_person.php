@@ -10,8 +10,8 @@
 
 
 <!-- Start Formoid form-->
-<link rel="stylesheet" href="formoid_files/formoid1/formoid-solid-blue.css" type="text/css" />
-<script type="text/javascript" src="formoid_files/formoid1/jquery.min.js"></script>
+<link rel="stylesheet" href="../../Resources/formoid_files/formoid1/formoid-solid-blue.css" type="text/css" />
+<script type="text/javascript" src="../../Resources/formoid_files/formoid1/jquery.min.js"></script>
 <form class="formoid-solid-blue" style="background-color:#FFFFFF;font-size:14px;font-family:'Roboto',Arial,Helvetica,sans-serif;color:#34495E;max-width:480px;min-width:150px" method="post" action="store.php" enctype="multipart/form-data"><div class="title"><h2>Missing Person</h2></div>
     <div class="element-input"><label class="title"><span class="required">*</span></label><div class="item-cont"><input class="large" type="text" name="name" required="required" placeholder="Name"/><span class="icon-place"></span></div></div>
     <div class="element-textarea"><label class="title"></label><div class="item-cont"><textarea class="medium" name="description" cols="20" rows="5" placeholder="Description"></textarea><span class="icon-place"></span></div></div>
@@ -46,7 +46,7 @@
     <!--        <div class="item-cont"><input class="large" type="text" name="updated_by" placeholder="Updated By"/>-->
     <!--            <span class="icon-place"></span></div></div>-->
 
-    <div class="submit"><input type="submit" value="Submit"/></div></form><p class="frmd"><a href="http://formoid.com/v29.php">javascript form validation</a> Formoid.com 2.9</p><script type="text/javascript" src="formoid_files/formoid1/formoid-solid-blue.js"></script>
+    <div class="submit"><input type="submit" value="Submit"/></div></form><p class="frmd"><a href="http://formoid.com/v29.php">javascript form validation</a> Formoid.com 2.9</p><script type="text/javascript" src="../../Resources/formoid_files/formoid1/formoid-solid-blue.js"></script>
 <!-- Stop Formoid form-->
 
 
