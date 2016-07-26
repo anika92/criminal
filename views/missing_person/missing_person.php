@@ -48,6 +48,7 @@
 
     <div class="submit"><input type="submit" value="Submit"/></div></form><p class="frmd"><a href="http://formoid.com/v29.php">javascript form validation</a> Formoid.com 2.9</p><script type="text/javascript" src="../../Resources/formoid_files/formoid1/formoid-solid-blue.js"></script>
 <!-- Stop Formoid form-->
+<script type="text/javascript" src="../../Resources/formoid_files/formoid1/formoid-solid-blue.js"></script>
 
 
 
